@@ -1,3 +1,4 @@
+#The steps define how to build and push a Docker image to Google Artifact Registry
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-f', 'Dockerfile.prod', '-t', 'us-central1-docker.pkg.dev/edge-trainee/custom-fastapi/custom-fastapi:latest', '.']
