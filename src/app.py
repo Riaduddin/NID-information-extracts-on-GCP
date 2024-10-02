@@ -17,6 +17,7 @@ app = FastAPI()
 
 # MongoDB connection
 MONGO_URI = os.getenv("MONGO_URI")
+print(MONGO_URI)
 client = AsyncIOMotorClient(MONGO_URI)
 db = client['NID_information']  # Replace with your database name
 collection = db['extracted_text']
